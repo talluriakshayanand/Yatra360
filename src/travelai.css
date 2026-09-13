@@ -1,0 +1,210 @@
+.travel-ai {
+  margin: 70px 0;
+  padding: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(255, 106, 0, 0.16), transparent 30%),
+    #11100f;
+  color: #fff;
+}
+
+.travel-ai-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.travel-ai-heading span,
+.travel-ai-result-top span {
+  color: #ff7518;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.travel-ai-heading h2 {
+  margin: 8px 0;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.travel-ai-heading p {
+  max-width: 650px;
+  margin: 0;
+  color: #a8a39e;
+  line-height: 1.7;
+}
+
+.travel-ai-orb {
+  width: 82px;
+  height: 82px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffb36b, #ff5b00 55%, #35170a);
+  box-shadow: 0 0 45px rgba(255, 100, 0, 0.35);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.travel-ai-search {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.travel-ai-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 18px 20px;
+  border: 1px solid #2d2a27;
+  border-radius: 14px;
+  outline: none;
+  background: #191816;
+  color: #fff;
+  font-size: 15px;
+}
+
+.travel-ai-search input:focus {
+  border-color: #ff6a00;
+}
+
+.travel-ai-search button {
+  border: 0;
+  border-radius: 14px;
+  padding: 0 25px;
+  background: #ff6a00;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.travel-ai-suggestions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.travel-ai-suggestions button {
+  padding: 9px 14px;
+  border: 1px solid #302d29;
+  border-radius: 999px;
+  background: transparent;
+  color: #c9c4bf;
+  cursor: pointer;
+}
+
+.travel-ai-suggestions button:hover {
+  border-color: #ff6a00;
+  color: #ff8b3d;
+}
+
+.travel-ai-result {
+  margin-top: 28px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #191816;
+  border: 1px solid #302d29;
+}
+
+.travel-ai-result-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.travel-ai-result-top h3 {
+  margin: 8px 0 0;
+  font-size: 25px;
+}
+
+.travel-ai-status {
+  color: #70df9a;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.travel-ai-days {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 22px;
+}
+
+.travel-ai-days article {
+  padding: 20px;
+  border-radius: 16px;
+  background: #11100f;
+  border: 1px solid #292623;
+}
+
+.travel-ai-days article > span {
+  color: #ff7518;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.travel-ai-days h4 {
+  margin: 10px 0;
+  font-size: 19px;
+}
+
+.travel-ai-days p {
+  color: #aaa49e;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.travel-ai-days strong {
+  color: #fff;
+}
+
+.travel-ai-tip {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 15px;
+  border-radius: 14px;
+  background: rgba(255, 106, 0, 0.08);
+}
+
+.travel-ai-tip span {
+  color: #ff7518;
+}
+
+.travel-ai-tip p {
+  margin: 0;
+  color: #bbb5af;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .travel-ai {
+    padding: 22px;
+  }
+
+  .travel-ai-heading h2 {
+    font-size: 29px;
+  }
+
+  .travel-ai-orb {
+    display: none;
+  }
+
+  .travel-ai-search {
+    flex-direction: column;
+  }
+
+  .travel-ai-search button {
+    padding: 15px;
+  }
+
+  .travel-ai-days {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,626 @@
+.transport-dashboard {
+  min-height: 100vh;
+  background: #f6f7f9;
+  color: #171717;
+  display: flex;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.transport-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: #111214;
+  color: #fff;
+  padding: 24px 16px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
+
+.transport-brand,
+.transport-profile,
+.transport-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.transport-brand {
+  padding: 4px 8px 26px;
+}
+
+.transport-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: #ff7417;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.transport-brand strong,
+.transport-profile strong,
+.transport-user strong {
+  display: block;
+  font-size: 13px;
+}
+
+.transport-brand span,
+.transport-profile span,
+.transport-user span {
+  display: block;
+  margin-top: 4px;
+  color: #85878c;
+  font-size: 11px;
+}
+
+.transport-profile {
+  padding: 17px 10px;
+  border-top: 1px solid #292a2e;
+  border-bottom: 1px solid #292a2e;
+}
+
+.transport-avatar,
+.transport-mini-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #25262a;
+  color: #ff8128;
+  font-weight: 800;
+}
+
+.transport-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 22px;
+}
+
+.transport-nav button {
+  border: 0;
+  background: transparent;
+  color: #92949a;
+  text-align: left;
+  padding: 12px 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.transport-nav button:hover,
+.transport-nav button.active {
+  background: #242528;
+  color: #fff;
+}
+
+.transport-nav button.active {
+  box-shadow: inset 3px 0 #ff7417;
+}
+
+.transport-nav button span {
+  width: 20px;
+  text-align: center;
+}
+
+.transport-back {
+  margin-top: auto;
+  border: 1px solid #343539;
+  background: transparent;
+  color: #ddd;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.transport-main {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  padding: 30px 36px 50px;
+}
+
+.transport-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.transport-small-label,
+.transport-panel-header span,
+.transport-welcome > div > span,
+.transport-placeholder > span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #ff7417;
+}
+
+.transport-topbar h1 {
+  margin: 5px 0 0;
+  font-size: 27px;
+}
+
+.transport-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.transport-top-actions > button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #e3e4e7;
+  background: #fff;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.transport-user {
+  background: #fff;
+  border: 1px solid #e6e7ea;
+  padding: 8px 13px 8px 8px;
+  border-radius: 13px;
+}
+
+.transport-welcome {
+  background: #17181b;
+  color: #fff;
+  border-radius: 20px;
+  padding: 29px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.transport-welcome h2 {
+  margin: 8px 0;
+  font-size: 27px;
+}
+
+.transport-welcome p {
+  margin: 0;
+  color: #a9abb0;
+  max-width: 590px;
+  font-size: 13px;
+}
+
+.transport-welcome-icon {
+  font-size: 78px;
+  opacity: 0.85;
+  transform: rotate(-8deg);
+}
+
+.transport-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 18px 0;
+}
+
+.transport-kpi {
+  background: #fff;
+  border: 1px solid #e6e7e9;
+  border-radius: 16px;
+  padding: 19px;
+  display: flex;
+  gap: 13px;
+}
+
+.kpi-icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 12px;
+  background: #fff0e5;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+}
+
+.transport-kpi small,
+.transport-kpi strong,
+.transport-kpi em {
+  display: block;
+}
+
+.transport-kpi small {
+  color: #777a80;
+  font-size: 11px;
+}
+
+.transport-kpi strong {
+  margin-top: 3px;
+  font-size: 21px;
+}
+
+.transport-kpi em {
+  margin-top: 3px;
+  color: #159447;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.transport-content-grid {
+  display: grid;
+  grid-template-columns: 1.65fr 0.8fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.transport-panel {
+  background: #fff;
+  border: 1px solid #e5e6e9;
+  border-radius: 17px;
+  padding: 22px;
+  margin-bottom: 18px;
+}
+
+.transport-content-grid .transport-panel {
+  margin-bottom: 0;
+}
+
+.transport-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.transport-panel-header h3 {
+  margin: 5px 0 0;
+  font-size: 18px;
+}
+
+.transport-panel-header button {
+  border: 0;
+  background: transparent;
+  color: #ff7417;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.transport-table-wrap {
+  overflow-x: auto;
+}
+
+.transport-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.transport-table th {
+  text-align: left;
+  color: #8a8c91;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 11px;
+  border-bottom: 1px solid #ececee;
+}
+
+.transport-table td {
+  padding: 13px 11px;
+  border-bottom: 1px solid #f0f0f1;
+  white-space: nowrap;
+}
+
+.transport-table td strong,
+.transport-table td small {
+  display: block;
+}
+
+.transport-table td small {
+  color: #999ba0;
+  margin-top: 3px;
+  font-size: 9px;
+}
+
+.transport-status,
+.vehicle-status {
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.transport-status.on-trip {
+  background: #fff0df;
+  color: #d66b00;
+}
+
+.transport-status.completed {
+  background: #e6f7ec;
+  color: #168344;
+}
+
+.transport-status.waiting {
+  background: #eeeafd;
+  color: #6654bf;
+}
+
+.driver-circle {
+  width: 145px;
+  height: 145px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: 12px solid #fff0e4;
+  outline: 2px solid #ff7417;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.driver-circle strong {
+  font-size: 30px;
+}
+
+.driver-circle span {
+  font-size: 11px;
+  color: #777;
+}
+
+.driver-circle small {
+  margin-top: 3px;
+  color: #ff7417;
+  font-size: 9px;
+}
+
+.driver-status-list {
+  border-top: 1px solid #eee;
+}
+
+.driver-status-list div {
+  padding: 11px 2px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12px;
+}
+
+.driver-status-list div strong {
+  margin-left: auto;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot.green {
+  background: #25a35a;
+}
+
+.dot.orange {
+  background: #ff7417;
+}
+
+.dot.gray {
+  background: #aaa;
+}
+
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+}
+
+.vehicle-card {
+  border: 1px solid #e8e8ea;
+  border-radius: 13px;
+  padding: 16px;
+}
+
+.vehicle-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vehicle-icon {
+  font-size: 26px;
+}
+
+.vehicle-status.active {
+  background: #e5f8ec;
+  color: #17864a;
+}
+
+.vehicle-status.available {
+  background: #fff1e2;
+  color: #d96b08;
+}
+
+.vehicle-status.offline {
+  background: #f0f0f1;
+  color: #777;
+}
+
+.vehicle-card h4 {
+  margin: 13px 0 4px;
+  font-size: 14px;
+}
+
+.vehicle-card p {
+  margin: 0;
+  color: #8a8b90;
+  font-size: 10px;
+}
+
+.vehicle-driver {
+  border-top: 1px solid #eee;
+  margin-top: 13px;
+  padding-top: 11px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.vehicle-driver span {
+  color: #999;
+}
+
+.transport-quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.transport-quick-actions button {
+  text-align: left;
+  border: 1px solid #e8e8ea;
+  background: #fafafa;
+  border-radius: 13px;
+  padding: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.transport-quick-actions button:hover {
+  border-color: #ff7417;
+  transform: translateY(-2px);
+}
+
+.transport-quick-actions span,
+.transport-quick-actions strong,
+.transport-quick-actions small {
+  display: block;
+}
+
+.transport-quick-actions span {
+  font-size: 24px;
+  margin-bottom: 11px;
+}
+
+.transport-quick-actions strong {
+  font-size: 13px;
+}
+
+.transport-quick-actions small {
+  color: #888;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.transport-placeholder {
+  min-height: 500px;
+  background: #fff;
+  border: 1px solid #e5e6e9;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+}
+
+.placeholder-icon {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.transport-placeholder h2 {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.transport-placeholder p {
+  max-width: 500px;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.transport-placeholder button {
+  margin-top: 15px;
+  border: 0;
+  background: #ff7417;
+  color: white;
+  padding: 12px 19px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 1150px) {
+  .transport-kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vehicle-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transport-quick-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .transport-sidebar {
+    width: 210px;
+  }
+
+  .transport-main {
+    width: calc(100% - 210px);
+    margin-left: 210px;
+    padding: 22px;
+  }
+
+  .transport-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .transport-sidebar {
+    position: static;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .transport-dashboard {
+    display: block;
+  }
+
+  .transport-main {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .transport-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transport-kpis,
+  .vehicle-grid,
+  .transport-quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .transport-topbar {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+}
